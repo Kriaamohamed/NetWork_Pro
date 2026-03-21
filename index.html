@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriaa Services | خدمات كريعة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h2 class="logo">Kriaa</h2>
+    <nav>
+        <button onclick="show('home')">الرئيسية</button>
+        <button onclick="show('social')">الخدمات</button>
+        <button onclick="show('thumb')">تصاميم</button>
+        <button onclick="show('contact')">اتصال</button>
+    </nav>
+</header>
+
+<section id="home" class="page active">
+    <div class="hero">
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Logo">
+        <h1>🔥 كبّر حسابك بسهولة</h1>
+        <p>خدمات سريعة ونتائج مضمونة لتعزيز تواجدك الرقمي</p>
+        <button class="btn pulse" onclick="show('social')">استعرض الخدمات الآن</button>
+    </div>
+</section>
+
+<section id="social" class="page">
+    <h2>📊 خدمات السوشيال ميديا</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+            <h3>Instagram Followers</h3>
+            <p class="price">10DT</p>
+            <p>1000 متابع</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 Instagram Followers')">شراء</button>
+                <button class="desc-btn" onclick="desc('متابعين بجودة عالية لزيادة هيبة الحساب')">وصف</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+            <h3>Instagram Reels</h3>
+            <p class="price">1DT</p>
+            <p>1000 مشاهدة ريلز</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 Insta Reels Views')">شراء</button>
+                <button class="desc-btn" onclick="desc('مشاهدات سريعة تساعد في صعود الريلز للاكسبلور')">وصف</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+            <h3>TikTok Followers</h3>
+            <p class="price">15DT</p>
+            <p>1000 متابع</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 TikTok Followers')">شراء</button>
+                <button class="desc-btn" onclick="desc('زيادة انتشار وتفاعل حقيقي على تيك توك')">وصف</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+            <h3>TikTok Views</h3>
+            <p class="price">1DT</p>
+            <p>1000 مشاهدة</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 TikTok Views')">شراء</button>
+                <button class="desc-btn" onclick="desc('أرخص سعر لزيادة المشاهدات بسرعة البرق')">وصف</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+            <h3>TikTok Likes</h3>
+            <p class="price">4DT</p>
+            <p>1000 لايك</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 TikTok Likes')">شراء</button>
+                <button class="desc-btn" onclick="desc('لايكات حقيقية لرفع ريتش الفيديو الخاص بك')">وصف</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+            <h3>YouTube Subs</h3>
+            <p class="price">20DT</p>
+            <p>1000 مشترك</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 YouTube Subscribers')">شراء</button>
+                <button class="desc-btn" onclick="desc('مشتركين حقيقيين لزيادة ثقة القناة والنمو')">وصف</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png">
+            <h3>Insta Likes</h3>
+            <p class="price">3DT</p>
+            <p>1000 لايك</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 Instagram Likes')">شراء</button>
+                <button class="desc-btn" onclick="desc('لايكات انستقرام سريعة وآمنة تماماً')">وصف</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="thumb" class="page">
+    <h2>🎨 التصاميم الإحترافية</h2>
+    <div class="cards">
+        <div class="card" style="width: 280px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/3502/3502688.png">
+            <h3>Thumbnail / صورة مصغرة</h3>
+            <p class="price">15DT</p>
+            <p>تصميم جذاب يزيد من نسبة النقر والمشاهدات</p>
+            <button class="buy-btn" style="width:100%" onclick="order('Design Thumbnail')">اطلب الآن</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="page">
+    <h2>📞 تواصل معنا مباشرة</h2>
+    <div class="hero">
+        <p>نحن متواجدون للرد على استفساراتكم وتنفيذ طلباتكم 24/7</p>
+        <button class="btn" onclick="whatsapp()" style="background:#25D366; font-size: 1.2rem;">تحدث عبر واتساب</button>
+    </div>
+</section>
+
+<div class="whatsapp-float" onclick="whatsapp()">
+    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" width="35">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
